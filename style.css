@@ -1,0 +1,196 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Hide scrollbars if they appear due to animation */
+}
+
+
+/* Background slide class */
+.background-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 50s infinite ease-in-out; /* Animation duration */
+    
+}
+
+/* Content styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    /* text-transform: uppercase; */
+}
+
+.background-slide h1  {
+    /* font-family: 'Georgia', serif; Elegant serif font */
+     font-style: italic; Italicize the text ;
+    font-size: 50px; /* Adjust the font size */
+    color: white; /* A soft, romantic color */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
+    text-align:center;
+}
+#details{
+    font-family: serif;
+    font-size: 40px; /* Adjust the font size */
+    color: white; /* A soft, romantic color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
+    text-align:center;
+}
+.text-container,.content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    
+}
+.navigation-buttons{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction:row;
+    text-align: center;
+    color: white;
+    
+}
+#previous{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#next{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.text-container h1{
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0.5rem 0;
+    letter-spacing: 0.05em;
+    font-style: italic; Italicize the text ;
+}
+
+.text-container h2{ 
+     font-size:  40px;
+    font-weight: normal;
+    margin: 0.5rem 0;
+    letter-spacing: 0.05em;
+    font-style: italic; Italicize the text ;}
+
+.text-container p{
+    font-size:  25px;
+    margin: 0.5rem 0;
+    letter-spacing: 0.05em;  
+}
+
+.text-container a, .navigation-buttons a,.content1 a,.content a  {background: lightgray;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    transition: background 0.3s, color 0.3s; /* Smooth transition on hover */
+    text-align: center;
+}
+
+.text-container a:hover, .content a:hover, .navigation-buttons a:hover {
+    background: rgb(155, 153, 153);
+    color: #fff;
+}
+
+#text{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+ text-align: center;font-style: italic; Italicize the text ;
+}
+.background-slide #details{
+    margin: 0;
+    font-size: 25px;
+    color: white;
+ text-align: center;
+}
+.text{
+    margin: 0;
+    font-size: 25px;
+    color: white;
+ text-align: center;
+}
+
+i {
+    font-size: 2em; /* Adjust size of the Font Awesome icons */
+    color: white; /* Icon color */
+    margin-right: 10px; 
+    text-align: center;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Optional: centers items vertically if container height is defined */
+    margin-top: 20px; /* Optional: space above the button container */
+    /* Add any other styling you need for the button container */
+}
+
+
+/* Background slide class */
+.background-slide {
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto; /* Enable scroll if content exceeds viewport height */
+}
+
+.background-slide h2 {
+    margin: 10px 0px;
+    font-size: 1.5em;
+    color: white; 
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Button styles */
+#openMapBtn {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #007bff; /* Adding border for better visibility */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px; /* Space around the button if needed */
+    text-decoration: none;
+}
+
+#openMapBtn:hover {
+    background-color: grey;
+    border-color: grey; /* Optional: Change border color on hover */
+}
+
+#initials{
+    width: 300px;
+    margin: 0px auto;
+    display: block;
+}
